@@ -19,6 +19,8 @@ const CrearJugador = async (req, res) => {
         catch{(console).error}("Error 500, No se pudo crear jugador");
     };
 
+
+    
 export {CrearJugador}
 
 export {Jugadores};
