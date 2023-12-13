@@ -1,9 +1,15 @@
 import {Router} from 'express';
-import {HelloWorld} from './controllers/hello-world-controller.js';
+import {CrearJugador, Jugadores} from './controllers/player-controllers.js';
  
 const router = Router();
 
-router.get('/', HelloWorld)
+router.get('/player', Jugadores)
+
+router.post('/player', CrearJugador)
+
+router.get('/player/:id')
+
+router.delete('/player/:id')
 
 export { router };
 
